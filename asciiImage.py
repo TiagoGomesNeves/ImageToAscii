@@ -4,6 +4,7 @@ import sys
 
 def getAscii(brightness):
     segments = '".`-_\':,;^=+/"|)\\<>)iv%xclrs{*}I?!][1taeo7zjLunT#JCwfy325Fp6mqSghVd4EgXPGZbYkOA&8U$@KHDBWNMR0Q'
+    segments = segments[::-1]
     segment_index = (brightness / 255.0) * (len(segments) - 1)
     character = segments[int(round(segment_index, 0))]
 
