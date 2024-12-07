@@ -25,7 +25,7 @@ def main():
     for y in range(height):
         asciiRow = []
         for x in range(width):
-            brightness = 255 - image.getpixel((x, y))
+            brightness = image.getpixel((x, y))
             asciiRow.append(getAscii(brightness))
 
         asciiImage.append(("").join(asciiRow))
